@@ -1,0 +1,229 @@
+*{
+margin: 0;
+padding: 0; 
+}
+
+html,body{
+    height:100%;
+    width:100%;
+		overflow-y: auto;
+		overflow-x: hidden;
+    } 
+a{
+	color: white;
+}
+li{
+	list-style-type: none
+}
+
+p{
+  margin-top: 5px ;
+  margin-bottom: 5px ;
+}
+
+	.my_text{
+	color: white;
+	font-size: 14px;
+	list-style-type: none;
+	margin-top: 20px;
+	}
+
+
+	#full_page_flex_container
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-height: 100%;
+
+		//overflow: hidden;
+		//overflow-x: auto;
+		
+		
+
+	}
+
+		#header_flex_container{
+
+		display: flex;
+		gap: 430px;
+		justify-content: center;
+		align-items: center;
+		height: 215px;
+		//width: 1306px;
+		width: 100%;
+		background-color: #DCDCDC;
+		}
+
+			#header_gray_box{
+				background-color: #767676;
+				height: 94px;
+				width:  94px;
+				margin-right: 13px ;
+
+			}
+
+
+
+			#header_left_group{
+				display: flex;
+				align-items: top;
+				//line-height: 25px;
+
+			}
+
+				#Company_name{
+
+				font-family: Arial;
+				color: #767676;
+				font-size: 25px;
+				font-weight: bold;
+				line-height: 15px;
+				
+
+				}
+
+				#the_coollest_company{
+				font-family: Arial;
+				color: #767676;
+				font-size: 14px;
+				margin-top: 18px;
+				}
+
+			#telephone_numbers{
+			font-family: Open Sans Condensed Light;
+			color: #767676;
+			font-size: 36px;
+			}
+
+
+		#menu_flex_container{
+			background-color:#767676 ;
+			height: 74px;
+			//width: 1306px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+			.menu_text{
+			font-family: Arial;
+			color: white;
+			font-size: 26px;
+			
+			}
+			.menu_item{
+				margin:21px;
+			}
+			.menu_item:hover{
+			text-decoration:underline;
+			cursor: pointer;
+			}
+
+		#body_flex_container{
+			flex: 1 1 auto;
+			//flex-grow: 1;
+		  display: flex;
+			flex-direction: column;
+			justify-content: start;
+
+
+		}
+
+			#text_under_baloons{
+				display: flex;
+				justify-content: center;
+			}
+				#text_under_baloons_News{
+
+				margin-right:95px;
+				margin-top:28px;
+				padding-left:34px;
+				padding-top:10px;
+				//width:327px;
+				//height:524px;
+				width:295px;
+				height:515px;
+				background-color: #767676;
+				color: #f6f6f6;
+				font-size:12px;
+				font-family: Arial;
+				}
+					#NEWS{
+						font-size:36px;
+						font-weight: bold;
+					}
+					.Kursiv{
+						font-style: italic;
+					}
+					#News_arch{
+						text-align: right;
+						margin-right: 50px;
+						margin-top: 40px;
+					}	
+
+
+				#text_under_baloons_Company{
+				margin-top:37px;
+				color:#767676;
+				font-size:11px;
+				font-family: Arial;
+				line-height: 15px;
+				}
+					#Pixel_plus_company{
+						font-size:36px;
+						margin-bottom: 18px;
+
+					}
+				
+
+		#footer_flex_container{
+		gap: 205px;
+		font-family: Arial;
+		font-size:41px;
+		color: #f6f6f6;
+		margin-top:180px;
+		padding-top: 50px;
+		background-color: #767676;
+		display: flex;
+		width: 100%;
+		height: 207px;
+		justify-content: center;
+		align-items: start;
+		}
+
+
+		.my_text_footer{
+
+			color: white;
+			font-size: 12px;
+			line-height: 17px;
+			
+
+		}
+		
+
+			#footer_flex_item_3{
+				
+				display: flex;
+				align-items: center;
+
+				
+			}
+				#footer_png{
+					widht: 44px;
+					height: 50px;
+								}
+
+
+
+
+
+
+
+
+
+
+
+
