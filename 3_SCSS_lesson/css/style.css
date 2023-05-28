@@ -1,0 +1,24 @@
+.salad {
+  background-color: #93C533;
+  border: 0px; }
+
+body {
+  width: 1300px;
+  margin: 0 auto; }
+
+.test {
+  border-radius: 30px;
+  background-color: #93C533;
+  border: 0px;
+  width: 100px;
+  height: 35px; }
+
+.main-banner {
+  width: 1300px;
+  background-image: url("/home/ghost75046/Git/WebDev/3_SCSS_lesson/images/venezia.png");
+  height: 470px; }
+
+.navbar {
+  width: 1300px; }
+
+/*# sourceMappingURL=style.css.map */
