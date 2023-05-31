@@ -1,9 +1,17 @@
 
 $main-color: #93C533;
+$side-color:#5f5f5f;
+//$main-color: red;
+
+
+@mixin text-centerer{
+text-align: center;
+}
 
 .salad{
 background-color:$main-color;	
 border:0px;
+
 }
 
 body{
@@ -22,11 +30,37 @@ body{
 
 .main-banner{
 	width:1300px;
-	background-image: url("/home/ghost75046/Git/WebDev/3_SCSS_lesson/images/venezia.png");
+	background-image: url("/home/savenkov/git/31_05_2023/WebDev/3_SCSS_lesson/images/venezia.png");
 	height:470px;
-
-
+	@include text-centerer;
+vertical-align: middle;
+display: flex;
+flex-direction:column;
+  align-items: center;
+  justify-content: center;
 }
 .navbar{
 	width:1300px;
 }
+
+
+#Intellectual_Property{
+font-size:35px;
+//vertical-align: middle;
+
+}
+
+.stonks_with_text{
+@include text-centerer;
+margin-top: 100px;
+}
+
+.active{
+	background-color:$main-color;
+
+}
+
+
+.nav-link{
+	color: $side-color;
+}	
