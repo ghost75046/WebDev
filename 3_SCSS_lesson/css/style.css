@@ -40,4 +40,26 @@ body {
 .nav-link {
   color: #5f5f5f; }
 
+.myslaider {
+  display: flex;
+  justify-content: center; }
+
+.fa-glasses {
+  font-size: 160px;
+  color: #2893bb;
+  margin-right: 50px; }
+
+#properties_button {
+  background-color: #2893bb;
+  border: 0px; }
+
+.myFind {
+  display: flex; }
+
+.Properties {
+  background-color: #e1f8ff; }
+
+.Buyers {
+  background-color: #f5f9ea; }
+
 /*# sourceMappingURL=style.css.map */
