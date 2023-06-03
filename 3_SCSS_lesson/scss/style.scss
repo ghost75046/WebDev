@@ -1,9 +1,18 @@
 
+
+body{
+	font-family: sans-serif;
+}
 $main-color: #93C533;
 $side-color:#5f5f5f;
 $my-blue-color:#2893bb;
 //$main-color: red;
 
+
+
+.main-color{
+	color:$main-color;
+}
 
 @mixin text-centerer{
 text-align: center;
@@ -31,7 +40,7 @@ body{
 
 .main-banner{
 	width:1300px;
-	background-image: url("/home/savenkov/git/31_05_2023/WebDev/3_SCSS_lesson/images/venezia.png");
+	background-image: url("../images/venezia.png");
 	height:470px;
 	@include text-centerer;
 vertical-align: middle;
@@ -54,6 +63,9 @@ font-size:35px;
 .stonks_with_text{
 @include text-centerer;
 margin-top: 100px;
+font-size: 19px;
+margin-bottom:160px;
+p{color:#515151;}
 }
 
 .active{
@@ -70,7 +82,7 @@ margin-top: 100px;
 	display: flex;
 
  justify-content: center;
-
+	margin-bottom:112px;
 }
 
 .fa-glasses{
@@ -86,16 +98,45 @@ margin-right: 50px;
 }
 
 .myFind{
-	display: flex;
 
+	
+}
+
+.centered-text{
+display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Properties{
 	background-color:#e1f8ff;
+	height:305px;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+
+	
+	img {
+	width:145px;
+	height:121px;
+	margin-right: 45px;
+	}
+
 }
 
 .Buyers{
 	background-color:#f5f9ea;
+	height:305px;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+
+	
+	img {
+	width:111px;
+	height:95px;
+	margin-right: 73px;
+	}
 }
 
 .two_faces{
@@ -109,7 +150,7 @@ margin-right: 50px;
 .text_in_cloud{
 	display: inline-block;
 	background-color:green;
-	background-image: url("/home/savenkov/git/31_05_2023/WebDev/3_SCSS_lesson/images/cloud_text.png");
+	background-image: url("../images/cloud_text.png");
 	background-size:100% 100%;
 	padding: 50px;
 	@include text-centerer;
@@ -136,7 +177,7 @@ margin-right: 50px;
 	height:50px;
 	width:50px;
  border-radius: 10px;
- background-image: url("/home/savenkov/git/31_05_2023/WebDev/3_SCSS_lesson/images/venezia.png");
+ background-image: url("../images/venezia.png");
  background-size:100% 100%;
  margin-left:120px;
  margin-right:20px;
@@ -147,4 +188,19 @@ margin-right: 50px;
 	display: flex;
 	align-items: end;
 
+}
+
+.mini-zagolovok-salad{
+	font-size: 25px;
+	color:$main-color;
+}
+
+.mini-zagolovok{
+	font-size: 25px;
+	
+}
+
+.mini-text{
+	font-size: 17px;
+	color:#515151;
 }
