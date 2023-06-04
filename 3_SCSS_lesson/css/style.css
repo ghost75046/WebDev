@@ -1,6 +1,3 @@
-body {
-  font-family: sans-serif; }
-
 .main-color {
   color: #93C533; }
 
@@ -10,7 +7,8 @@ body {
 
 body {
   width: 1300px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: sans-serif; }
 
 .test {
   border-radius: 30px;
@@ -137,5 +135,21 @@ body {
 .mini-text {
   font-size: 17px;
   color: #515151; }
+
+#featured {
+  font-size: 29px; }
+
+.Featured_Projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 85px; }
+
+#button_text {
+  font-size: 15px;
+  margin-left: 152px; }
+
+.MyCards {
+  margin-top: 63px; }
 
 /*# sourceMappingURL=style.css.map */
