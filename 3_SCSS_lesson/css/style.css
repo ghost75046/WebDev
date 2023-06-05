@@ -96,7 +96,6 @@ body {
 
 .text_in_cloud {
   display: inline-block;
-  background-color: green;
   background-image: url("../images/cloud_text.png");
   background-size: 100% 100%;
   padding: 50px;
@@ -118,7 +117,7 @@ body {
   height: 50px;
   width: 50px;
   border-radius: 10px;
-  background-image: url("../images/venezia.png");
+  background-image: url("../images/face1.png");
   background-size: 100% 100%;
   margin-left: 120px;
   margin-right: 20px; }
@@ -154,6 +153,13 @@ body {
 
 .MyCards {
   margin-top: 63px; }
+  .MyCards i {
+    color: #93C533; }
+  .MyCards a {
+    text-align: right; }
+  .MyCards p {
+    font-size: 17px;
+    color: #515151; }
 
 .Be_Part {
   text-align: center;
@@ -173,5 +179,19 @@ body {
 
 .progress-bar {
   background-color: #93C533; }
+
+.funded {
+  margin-top: 22px; }
+
+.lunapark-bg {
+  background-image: url("../images/back-water.jpg");
+  background-size: 100% 100%;
+  padding-bottom: 60px; }
+
+.main-nav {
+  display: flex;
+  justify-content: center; }
+  .main-nav button {
+    margin-left: 75px; }
 
 /*# sourceMappingURL=style.css.map */
