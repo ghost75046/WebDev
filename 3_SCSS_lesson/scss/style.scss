@@ -52,7 +52,7 @@ flex-direction:column;
 }
 
 
-#Intellectual_Property{
+.Big_zagolovok{
 font-size:35px;
 //vertical-align: middle;
 
@@ -78,6 +78,7 @@ p{color:#515151;}
 
 .myslaider{
 	display: flex;
+	margin-top:70px;
 
  justify-content: center;
 	margin-bottom:112px;
@@ -139,6 +140,7 @@ display: flex;
 
 .two_faces{
 		display: flex;
+		margin-top:100px;
 //background-image: url("../images/back_london.jpeg");
 }
 
@@ -160,6 +162,7 @@ display: flex;
 .brands{
 	display: flex;
 	justify-content: center;
+	margin-top: 55px;
 }
 
 .Backham_h4{
@@ -227,4 +230,38 @@ display: flex;
 
 .MyCards{
 	margin-top:63px;
+}
+
+.Be_Part{
+		@include text-centerer;
+		margin-top: 90px;
+}
+
+.Copyright{
+margin-top:70px;
+@include text-centerer;
+}
+
+
+.STC_tabs{
+	a{
+		font-size:33px;
+	}
+	button{
+		margin-right: 32px;
+		//border-radius:50%;
+		width: 43px; 
+		height: 43px; 
+		border:0px;
+		//display:flex;
+		//align-items:center;
+	//	@include text-centerer;
+
+}
+
+}
+
+
+.progress-bar {
+    background-color: $main-color;
 }

@@ -31,7 +31,7 @@ body {
 .navbar {
   width: 1300px; }
 
-#Intellectual_Property {
+.Big_zagolovok {
   font-size: 35px; }
 
 .stonks_with_text {
@@ -50,6 +50,7 @@ body {
 
 .myslaider {
   display: flex;
+  margin-top: 70px;
   justify-content: center;
   margin-bottom: 112px; }
 
@@ -90,7 +91,8 @@ body {
     margin-right: 73px; }
 
 .two_faces {
-  display: flex; }
+  display: flex;
+  margin-top: 100px; }
 
 .text_in_cloud {
   display: inline-block;
@@ -102,7 +104,8 @@ body {
 
 .brands {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 55px; }
 
 .Backham_h4 {
   color: #93C533; }
@@ -151,5 +154,24 @@ body {
 
 .MyCards {
   margin-top: 63px; }
+
+.Be_Part {
+  text-align: center;
+  margin-top: 90px; }
+
+.Copyright {
+  margin-top: 70px;
+  text-align: center; }
+
+.STC_tabs a {
+  font-size: 33px; }
+.STC_tabs button {
+  margin-right: 32px;
+  width: 43px;
+  height: 43px;
+  border: 0px; }
+
+.progress-bar {
+  background-color: #93C533; }
 
 /*# sourceMappingURL=style.css.map */
