@@ -193,5 +193,13 @@ body {
   justify-content: center; }
   .main-nav button {
     margin-left: 75px; }
+  .main-nav img {
+    height: 36px;
+    width: 36px;
+    margin-rigth: 10px; }
+
+.navbar-brand {
+  display: flex;
+  align-items: center; }
 
 /*# sourceMappingURL=style.css.map */
