@@ -44,13 +44,20 @@ body{
 	background-image: url("../images/venezia.jpg");
 	height:470px;
 	@include text-centerer;
-vertical-align: middle;
-display: flex;
-flex-direction:column;
-  align-items: center;
-  justify-content: center;
+	vertical-align: middle;
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: center;
+	button{
+		font-size: 19px;
+		font-weight: 550;
+	}
 }
 
+#Banana{
+	font-size: 35px;
+}
 
 button{
 width: 254px;
@@ -77,8 +84,13 @@ font-size:49px;
 margin-top: 100px;
 font-size: 19px;
 margin-bottom:160px;
-p{color:#515151;}
+	p{color:#515151;}
+	h2 {
+		margin-top: 52px;
+		margin-bottom: 73px;
+	}
 }
+
 
 .active{
 	background-color:$main-color;
@@ -218,6 +230,7 @@ display: flex;
 .mini-zagolovok-salad{
 	font-size: 25px;
 	color:$main-color;
+	margin-bottom: 43px;
 }
 
 .mini-zagolovok{
@@ -325,6 +338,7 @@ margin-top:22px;
 	button{
 		margin-left: 75px;
 		font-size: 13px;
+
 	}
 	img{
 		height: 36px;
