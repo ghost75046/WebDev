@@ -1,0 +1,364 @@
+
+
+
+$main-color: #93C533;
+$side-color:#5f5f5f;
+$my-blue-color:#2893bb;
+//$main-color: red;
+
+
+
+.main-color{
+	color:$main-color;
+}
+
+@mixin text-centerer{
+text-align: center;
+}
+
+.salad{
+background-color:$main-color;	
+border:0px;
+
+}
+
+body{
+	width:1300px;
+	margin:0 auto;
+  font-family: sans-serif;
+}
+
+.test{
+ border-radius: 30px; 
+ background-color: $main-color;
+ border:0px;
+ width:100px;
+ height: 35px;
+}
+
+
+
+
+.main-banner{
+	width:1300px;
+	background-image: url("../images/venezia.jpg");
+	height:470px;
+	@include text-centerer;
+vertical-align: middle;
+display: flex;
+flex-direction:column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+button{
+width: 254px;
+height: 73px;
+display:flex !important;
+align-items:center !important;
+justify-content: center !important;
+}
+.navbar{
+	width:1300px;
+}
+
+
+.Big_zagolovok{
+font-size:49px;
+	font-family: "Open Sans";
+	font-weight: 600;
+//vertical-align: middle;
+
+}
+
+.stonks_with_text{
+@include text-centerer;
+margin-top: 100px;
+font-size: 19px;
+margin-bottom:160px;
+p{color:#515151;}
+}
+
+.active{
+	background-color:$main-color;
+
+}
+
+
+.nav-link{
+	color: $side-color;
+}	
+
+.myslaider{
+	display: flex;
+	margin-top:70px;
+
+ justify-content: center;
+	margin-bottom:112px;
+}
+
+.fa-glasses{
+font-size: 160px;
+color:$my-blue-color;
+margin-right: 106px;
+
+}
+
+#properties_button{
+	background-color:$my-blue-color;
+	border:0px
+}
+
+.myFind{
+
+button{
+
+	display:flex !important;
+align-items:center !important;
+justify-content: center !important;
+height: 51px;
+width: 187px;
+
+}
+}
+
+.centered-text{
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Properties{
+	background-color:#e1f8ff;
+	height:305px;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+
+	
+	img {
+	width:145px;
+	height:121px;
+	margin-right: 45px;
+	}
+
+}
+
+.Buyers{
+	background-color:#f5f9ea;
+	height:305px;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+
+	
+	img {
+	width:111px;
+	height:95px;
+	margin-right: 73px;
+	}
+}
+
+.two_faces{
+		display: flex;
+		margin-top:100px;
+//background-image: url("../images/back_london.jpeg");
+}
+
+
+	
+
+
+.text_in_cloud{
+
+	display: inline-block;
+	//background-color:green;
+	background-image: url("../images/cloud_text.png");
+	background-size:100% 100%;
+	padding: 50px;
+	@include text-centerer;
+
+}
+
+.brands{
+	display: flex;
+	justify-content: center;
+	margin-top: 55px;
+}
+
+.Backham_h4{
+	color:$main-color;
+}
+
+.Backham_text{
+	color:$side-color;
+	font-size: 14px;
+
+}
+
+ 
+.Backham_face{
+	height:50px;
+	width:50px;
+ border-radius: 10px;
+ background-image: url("../images/face1.png");
+ background-size:100% 100%;
+ margin-left:120px;
+ margin-right:20px;
+}
+
+.user_data{
+	margin-top:20px;
+	display: flex;
+	align-items: end;
+
+}
+
+.mini-zagolovok-salad{
+	font-size: 25px;
+	color:$main-color;
+}
+
+.mini-zagolovok{
+	font-size: 25px;
+	
+}
+
+.mini-text{
+	font-size: 17px;
+	color:#515151;
+}
+
+
+
+
+#featured{
+	font-size: 29px;
+
+}
+.Featured_Projects{
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	margin-top:85px;
+}
+
+
+#button_text{
+	font-size: 15px;
+	margin-left:152px;
+}
+
+.MyCards{
+	margin-top:63px;
+	i{
+		color:$main-color;
+		//width: 30px;
+		//height: 17px;
+		//font-size: 17px;
+	}
+	a{
+		text-align: right;
+	}
+	p{
+			font-size: 17px;
+	color:#515151;
+	}
+}
+
+.Be_Part{
+		@include text-centerer;
+		margin-top: 90px;
+}
+
+.Copyright{
+margin-top:70px;
+@include text-centerer;
+}
+
+
+.STC_tabs{
+	a{
+		font-size:33px;
+		display:flex;
+		font-family: "Open Sans";
+	}
+	button{
+		margin-right: 32px;
+		//border-radius:50%;
+		width: 43px; 
+		height: 43px; 
+		border:0px;
+		justify-content: center;
+		font-size:21px;
+		font-family: "Open Sans";
+		background-color:#5f5f5f;
+		//display:flex;
+		//align-items:center;
+	//	@include text-centerer;
+
+}
+
+}
+
+
+.progress-bar {
+    background-color: $main-color;
+}
+
+.funded{
+margin-top:22px;
+}
+
+//поменяй картинку
+.lunapark-bg{
+		background-image: url("../images/back-water.jpg");
+		background-size:100% 100%;
+		padding-bottom: 60px;
+}
+
+
+.main-nav{
+	display: flex;
+	justify-content: center;
+	button{
+		margin-left: 75px;
+		font-size: 13px;
+	}
+	img{
+		height: 36px;
+		width: 36px;
+		margin-rigth:10px;
+	}
+	li{
+	font-size: 13px;
+	font-family: "Open Sans";
+	font-weight: 600;
+
+	}
+}
+
+
+.navbar-brand{
+	display: flex;
+	align-items:center;
+	font-size: 31px;
+	font-family: Nunito;
+	display: flex;
+	align-items:start;
+	img{
+	height: 37px;
+	width: 37px;
+	margin-rigth:10px;
+
+	}
+
+	}
+
+.active{
+	background-color:$main-color !important;
+
+}
+
+
