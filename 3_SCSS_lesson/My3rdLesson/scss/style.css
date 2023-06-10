@@ -8,7 +8,7 @@
 body {
   width: 1300px;
   margin: 0 auto;
-  font-family: sans-serif; }
+  font-family: "Open Sans"; }
 
 .test {
   border-radius: 30px;
@@ -19,7 +19,7 @@ body {
 
 .main-banner {
   width: 1300px;
-  height: 570px;
+  height: 570px !important;
   background-size: 100% 100%;
   background-image: url("../images/venezia.jpg");
   height: 470px;
@@ -30,6 +30,7 @@ body {
   align-items: center;
   justify-content: center; }
   .main-banner button {
+    margin-top: 60px;
     font-size: 19px;
     font-weight: 550;
     width: 253px;
@@ -59,7 +60,9 @@ button {
   font-size: 19px;
   margin-bottom: 160px; }
   .stonks_with_text p {
-    color: #515151; }
+    color: #515151;
+    font-size: 19px;
+    font-family: "Open Sans"; }
   .stonks_with_text h2 {
     margin-top: 52px;
     margin-bottom: 73px; }
@@ -121,6 +124,7 @@ button {
 
 .two_faces {
   display: flex;
+  justify-content: space-around;
   margin-top: 100px; }
 
 .text_in_cloud {
@@ -148,13 +152,17 @@ button {
   border-radius: 10px;
   background-image: url("../images/face1.png");
   background-size: 100% 100%;
-  margin-left: 120px;
+  margin-left: 70px;
   margin-right: 20px; }
 
 .user_data {
   margin-top: 20px;
   display: flex;
   align-items: end; }
+  .user_data p {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; }
 
 .mini-zagolovok-salad {
   font-size: 25px;
@@ -162,7 +170,9 @@ button {
   margin-bottom: 43px; }
 
 .mini-zagolovok {
-  font-size: 25px; }
+  font-size: 23px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; }
 
 .mini-text {
   font-size: 17px;
@@ -214,7 +224,8 @@ button {
   .STC_tabs a {
     font-size: 33px;
     display: flex;
-    font-family: "Open Sans"; }
+    font-family: "Open Sans";
+    font-weight: 200; }
   .STC_tabs button {
     margin-right: 32px;
     width: 43px;
@@ -225,6 +236,12 @@ button {
     font-family: "Open Sans";
     background-color: #5f5f5f; }
 
+.nav_text {
+  color: #5f5f5f !important; }
+
+.nav-link:hover {
+  color: #93C533; }
+
 .progress-bar {
   background-color: #93C533; }
 
@@ -233,7 +250,7 @@ button {
 
 .lunapark-bg {
   background-image: url("../images/back-water.jpg");
-  background-size: 100% 100%;
+  background-size: 110% 100%;
   padding-bottom: 60px; }
 
 .main-nav {
@@ -269,17 +286,14 @@ button {
 .active {
   background-color: #93C533 !important; }
 
-.nav-link:hover {
-  color: #93C533; }
-
 .markers-cards {
   display: flex; }
 
 .color-markers {
   margin-left: 50px;
   margin-right: 60px;
-  margin-top: 285px; }
+  margin-top: 260px; }
   .color-markers img {
-    height: 288px; }
+    height: 260px; }
 
 /*# sourceMappingURL=style.css.map */
