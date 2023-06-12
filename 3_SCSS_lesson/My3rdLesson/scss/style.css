@@ -245,6 +245,8 @@ body {
 
 .nav-link:hover {
   color: #93C533; }
+.nav-link:focus {
+  color: #93C533; }
 
 .progress-bar {
   background-color: #93C533; }

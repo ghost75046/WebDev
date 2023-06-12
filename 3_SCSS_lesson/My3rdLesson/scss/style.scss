@@ -384,6 +384,9 @@ width: 187px;
 	&:hover {
 		color:$main-color;
 		}
+	&:focus {
+		color:$main-color;
+	}
 }
 
 
@@ -483,3 +486,5 @@ margin-top:22px;
 	font-size: 15px !important;
 	font-weight: 600;
 }
+
+
