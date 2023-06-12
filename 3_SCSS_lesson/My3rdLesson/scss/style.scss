@@ -4,6 +4,7 @@
 $main-color: #93C533;
 $side-color:#5f5f5f;
 $my-blue-color:#2893bb;
+$border-color:#e6e6e6;
 //$main-color: red;
 
 
@@ -16,11 +17,18 @@ $my-blue-color:#2893bb;
 text-align: center;
 }
 
-.salad{
-background-color:$main-color;	
-border:0px;
-
+@mixin main-button{
+	background-color: $main-color;
+	border:0px;
 }
+
+@mixin flex-centerer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
 
 body{
 	width:1300px;
@@ -29,10 +37,9 @@ body{
 	font-family: "Open Sans";
 }
 
-.test{
- border-radius: 30px; 
- background-color: $main-color;
- border:0px;
+.login{
+ border-radius: 30px;
+@include main-button;
  width:100px;
  height: 35px;
 }
@@ -49,16 +56,19 @@ body{
 	height:470px;
 	@include text-centerer;
 	vertical-align: middle;
-	display: flex;
+	@include flex-centerer;
 	flex-direction:column;
-	align-items: center;
-	justify-content: center;
+
+
+
+
 	button{
 		margin-top: 60px;
 		font-size: 19px;
 		font-weight: 550;
 		width: 253px;
 		height: 72px;
+		@include main-button;
 	}
 }
 
@@ -66,13 +76,7 @@ body{
 	font-size: 35px;
 }
 
-button{
-width: 254px;
-height: 73px;
-display:flex !important;
-align-items:center !important;
-justify-content: center !important;
-}
+
 .navbar{
 	width:1300px;
 }
@@ -117,15 +121,15 @@ margin-bottom:160px;
 }	
 
 .myslaider{
-	display: flex;
+ 	@include flex-centerer;
 	margin-top:70px;
 
- justify-content: center;
+
 	margin-bottom:112px;
 }
 
 .fa-glasses{
-font-size: 160px;
+font-size: 120px;
 color:$my-blue-color;
 margin-right: 106px;
 
@@ -150,9 +154,7 @@ width: 187px;
 }
 
 .centered-text{
-display: flex;
-  align-items: center;
-  justify-content: center;
+	@include flex-centerer;
 }
 
 .Properties{
@@ -184,12 +186,16 @@ display: flex;
 	height:95px;
 	margin-right: 73px;
 	}
+	button{
+		@include main-button;
+	}
 }
 
 .two_faces{
 		display: flex;
 		justify-content: space-around;
 		margin-top:100px;
+
 //background-image: url("../images/back_london.jpeg");
 }
 
@@ -216,8 +222,20 @@ display: flex;
 	//border-bottom: 1px solid;
 }
 
+.brand{
+	margin-left: 10px;
+	margin-right: 10px;
+	//width: 132px;
+	//height: 42px;
+}
+
 .Backham_h4{
 	color:$main-color;
+	font-size: 21px;
+	font-family: "Open Sans";
+	font-weight: 600;
+
+
 }
 
 .Backham_text{
@@ -290,6 +308,7 @@ display: flex;
 #button_text{
 	font-size: 15px;
 	margin-left:152px;
+	font-weight: 600;
 }
 
 .MyCards{
@@ -307,7 +326,7 @@ display: flex;
 	p{
 		font-size: 13px;
 		font-family: "Open Sans";
-		font-weight: 600;
+		//font-weight: 600;
 	color:#515151;
 	}
 	h5{}
@@ -323,15 +342,17 @@ display: flex;
 }
 
 .Copyright{
-	border-top:1px solid #e6e6e6;
-margin-top:40px;
+	border-top:1px solid $border-color;
+	margin-top:40px;
 	padding-top: 30px;
+	font-size: 13px;
+	color:#848484;
 @include text-centerer;
 }
 
 
 .STC_tabs{
-	border-bottom: 1px solid #e6e6e6;
+	border-bottom: 1px solid $border-color;
 	a{
 		font-size:33px;
 		display:flex;
@@ -347,7 +368,7 @@ margin-top:40px;
 		justify-content: center;
 		font-size:21px;
 		font-family: "Open Sans";
-		background-color:#5f5f5f;
+		background-color:$side-color;
 
 		//display:flex;
 		//align-items:center;
@@ -357,7 +378,7 @@ margin-top:40px;
 
 }
 .nav_text{
-	color:#5f5f5f !important;
+	color:$side-color !important;
 }
 .nav-link{
 	&:hover {
@@ -365,12 +386,24 @@ margin-top:40px;
 		}
 }
 
+
+
+
 .progress-bar {
     background-color: $main-color;
 }
 
 .funded{
 margin-top:22px;
+
+	display: flex;
+	justify-content: space-between;
+	p{
+		font-size: 13px;
+		font-family: "Open Sans";
+		font-weight: 600;
+		color:#8d8d8d;
+	}
 }
 
 //поменяй картинку
@@ -439,9 +472,14 @@ margin-top:22px;
 .color-markers{
 	margin-left: 50px;
 	margin-right: 60px;
-	margin-top: 260px;
+	margin-top: 280px;
 	img {
 		height: 260px;
 	}
 
+}
+
+.See{
+	font-size: 15px !important;
+	font-weight: 600;
 }

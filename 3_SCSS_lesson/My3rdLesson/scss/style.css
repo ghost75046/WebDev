@@ -1,16 +1,12 @@
 .main-color {
   color: #93C533; }
 
-.salad {
-  background-color: #93C533;
-  border: 0px; }
-
 body {
   width: 1300px;
   margin: 0 auto;
   font-family: "Open Sans"; }
 
-.test {
+.login {
   border-radius: 30px;
   background-color: #93C533;
   border: 0px;
@@ -26,25 +22,20 @@ body {
   text-align: center;
   vertical-align: middle;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column; }
   .main-banner button {
     margin-top: 60px;
     font-size: 19px;
     font-weight: 550;
     width: 253px;
-    height: 72px; }
+    height: 72px;
+    background-color: #93C533;
+    border: 0px; }
 
 #Banana {
   font-size: 35px; }
-
-button {
-  width: 254px;
-  height: 73px;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important; }
 
 .navbar {
   width: 1300px; }
@@ -75,12 +66,13 @@ button {
 
 .myslaider {
   display: flex;
-  margin-top: 70px;
+  align-items: center;
   justify-content: center;
+  margin-top: 70px;
   margin-bottom: 112px; }
 
 .fa-glasses {
-  font-size: 160px;
+  font-size: 120px;
   color: #2893bb;
   margin-right: 106px; }
 
@@ -121,6 +113,9 @@ button {
     width: 111px;
     height: 95px;
     margin-right: 73px; }
+  .Buyers button {
+    background-color: #93C533;
+    border: 0px; }
 
 .two_faces {
   display: flex;
@@ -139,8 +134,15 @@ button {
   justify-content: center;
   margin-top: 55px; }
 
+.brand {
+  margin-left: 10px;
+  margin-right: 10px; }
+
 .Backham_h4 {
-  color: #93C533; }
+  color: #93C533;
+  font-size: 21px;
+  font-family: "Open Sans";
+  font-weight: 600; }
 
 .Backham_text {
   color: #5f5f5f;
@@ -191,7 +193,8 @@ button {
 
 #button_text {
   font-size: 15px;
-  margin-left: 152px; }
+  margin-left: 152px;
+  font-weight: 600; }
 
 .MyCards {
   width: 980px;
@@ -204,7 +207,6 @@ button {
   .MyCards p {
     font-size: 13px;
     font-family: "Open Sans";
-    font-weight: 600;
     color: #515151; }
   .MyCards .card {
     background-color: #f9f9f9; }
@@ -217,6 +219,8 @@ button {
   border-top: 1px solid #e6e6e6;
   margin-top: 40px;
   padding-top: 30px;
+  font-size: 13px;
+  color: #848484;
   text-align: center; }
 
 .STC_tabs {
@@ -246,7 +250,14 @@ button {
   background-color: #93C533; }
 
 .funded {
-  margin-top: 22px; }
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between; }
+  .funded p {
+    font-size: 13px;
+    font-family: "Open Sans";
+    font-weight: 600;
+    color: #8d8d8d; }
 
 .lunapark-bg {
   background-image: url("../images/back-water.jpg");
@@ -292,8 +303,12 @@ button {
 .color-markers {
   margin-left: 50px;
   margin-right: 60px;
-  margin-top: 260px; }
+  margin-top: 280px; }
   .color-markers img {
     height: 260px; }
+
+.See {
+  font-size: 15px !important;
+  font-weight: 600; }
 
 /*# sourceMappingURL=style.css.map */
