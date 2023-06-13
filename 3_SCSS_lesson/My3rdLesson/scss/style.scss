@@ -1,45 +1,41 @@
-
-
-
+//vars
 $main-color: #93C533;
 $side-color:#5f5f5f;
 $my-blue-color:#2893bb;
 $border-color:#e6e6e6;
-//$main-color: red;
+$main-font-family:'Open Sans', sans-serif;
+$page-width:1300px;
 
-
-
-.main-color{
-	color:$main-color;
+//extends
+%text-centerer{
+	text-align: center;
 }
 
-@mixin text-centerer{
-text-align: center;
-}
-
-@mixin main-button{
+%main-button{
 	background-color: $main-color;
-	border:0px;
+	border:0;
 }
 
-@mixin flex-centerer{
+%flex-centerer{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
 
+.main-color{
+	color:$main-color;
+}
 
 body{
-	width:1300px;
+	width:$page-width;
 	margin:0 auto;
-  //font-family: sans-serif;
-	font-family: "Open Sans";
+	font-family: $main-font-family;
 }
 
 .login{
  border-radius: 30px;
-@include main-button;
+@extend %main-button;
  width:100px;
  height: 35px;
 }
@@ -48,19 +44,14 @@ body{
 
 
 .main-banner{
-	width:1300px;
+	width:$page-width;
 	height: 570px !important;
-
 	background-size:100% 100%;
 	background-image: url("../images/venezia.jpg");
-	height:470px;
-	@include text-centerer;
+	@extend %text-centerer;
 	vertical-align: middle;
-	@include flex-centerer;
+	@extend %flex-centerer;
 	flex-direction:column;
-
-
-
 
 	button{
 		margin-top: 60px;
@@ -68,7 +59,7 @@ body{
 		font-weight: 550;
 		width: 253px;
 		height: 72px;
-		@include main-button;
+		@extend %main-button;
 	}
 }
 
@@ -78,53 +69,38 @@ body{
 
 
 .navbar{
-	width:1300px;
+	width:$page-width;
 }
 
 
 .Big_zagolovok{
 font-size:39px;
-	font-family: "Open Sans";
-	font-weight: 600;
-//vertical-align: middle;
-
+font-weight: 600;
 }
 
 .stonks_with_text{
-@include text-centerer;
+@extend %text-centerer;
 margin-top: 100px;
 font-size: 19px;
 margin-bottom:160px;
 	p{
 		color:#515151;
 		font-size: 19px;
-		font-family: "Open Sans";
-		//font-weight: 550;
 	}
 
 	h2 {
 		margin-top: 52px;
 		margin-bottom: 73px;
-
 	}
 }
-
-
-.active{
-	background-color:$main-color;
-
-}
-
 
 .nav-link{
 	color: $side-color;
 }	
 
 .myslaider{
- 	@include flex-centerer;
+ 	@extend %flex-centerer;
 	margin-top:70px;
-
-
 	margin-bottom:112px;
 }
 
@@ -132,29 +108,25 @@ margin-bottom:160px;
 font-size: 120px;
 color:$my-blue-color;
 margin-right: 106px;
-
 }
 
 #properties_button{
 	background-color:$my-blue-color;
-	border:0px
+	border:0;
 }
 
 .myFind{
 
 button{
-
-	display:flex !important;
-align-items:center !important;
-justify-content: center !important;
+@extend %flex-centerer;
 height: 51px;
 width: 187px;
-
+font-weight: 600;
 }
 }
 
 .centered-text{
-	@include flex-centerer;
+	@extend %flex-centerer;
 }
 
 .Properties{
@@ -164,7 +136,6 @@ width: 187px;
 	justify-content: center;
 	align-items:center;
 
-	
 	img {
 	width:145px;
 	height:121px;
@@ -176,18 +147,16 @@ width: 187px;
 .Buyers{
 	background-color:#f5f9ea;
 	height:305px;
-	display:flex;
-	justify-content: center;
-	align-items:center;
+	@extend %flex-centerer;
 
-	
 	img {
 	width:111px;
 	height:95px;
 	margin-right: 73px;
 	}
 	button{
-		@include main-button;
+		@extend %main-button;
+		font-weight: 600;
 	}
 }
 
@@ -195,65 +164,47 @@ width: 187px;
 		display: flex;
 		justify-content: space-around;
 		margin-top:100px;
-
-//background-image: url("../images/back_london.jpeg");
 }
 
-
-	
-
-
 .text_in_cloud{
-
 	display: inline-block;
-	//background-color:green;
 	background-image: url("../images/cloud_text.png");
 	background-size:100% 100%;
 	padding: 50px;
-
-	@include text-centerer;
-
+	@extend %text-centerer
 }
 
 .brands{
 	display: flex;
 	justify-content: center;
 	margin-top: 55px;
-	//border-bottom: 1px solid;
 }
 
 .brand{
 	margin-left: 10px;
 	margin-right: 10px;
-	//width: 132px;
-	//height: 42px;
-}
+	}
 
 .Backham_h4{
 	color:$main-color;
 	font-size: 21px;
-	font-family: "Open Sans";
 	font-weight: 600;
-
-
 }
 
 .Backham_text{
 	color:$side-color;
 	font-size: 14px;
-
 }
 
  
 .Backham_face{
-	height:50px;
-	width:50px;
- border-radius: 10px;
- background-image: url("../images/face1.png");
- background-size:100% 100%;
- margin-left:70px;
- margin-right:20px;
-
+	 height:50px;
+	 width:50px;
+	 border-radius: 10px;
+	 background-image: url("../images/face1.png");
+	 background-size:100% 100%;
+	 margin-left:70px;
+	 margin-right:20px;
 }
 
 .user_data{
@@ -272,14 +223,12 @@ width: 187px;
 	font-size: 25px;
 	color:$main-color;
 	margin-bottom: 43px;
-
 }
 
 .mini-zagolovok{
 	font-size: 23px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
-	
 }
 
 .mini-text{
@@ -292,8 +241,8 @@ width: 187px;
 
 #featured{
 	font-size: 29px;
-
 }
+
 .Featured_Projects{
 	display:flex;
 	justify-content: space-between;
@@ -301,9 +250,7 @@ width: 187px;
 	align-items:center;
 	margin-top:85px;
 	width: 980px;
-	//border: 1px solid;
 }
-
 
 #button_text{
 	font-size: 15px;
@@ -316,28 +263,23 @@ width: 187px;
 	margin-top:63px;
 	i{
 		color:$main-color;
-		//width: 30px;
-		//height: 17px;
-		//font-size: 17px;
 	}
 	a{
 		text-align: right;
 	}
 	p{
 		font-size: 13px;
-		font-family: "Open Sans";
-		//font-weight: 600;
-	color:#515151;
+		color:#515151;
 	}
-	h5{}
-	font-family: "Open Sans";
-	.card{
-		background-color: #f9f9f9;
-	}
+
+
+}
+.card{
+	background-color: #f9f9f9;
 }
 
 .Be_Part{
-		@include text-centerer;
+		@extend %text-centerer;
 		margin-top: 90px;
 }
 
@@ -347,7 +289,7 @@ width: 187px;
 	padding-top: 30px;
 	font-size: 13px;
 	color:#848484;
-@include text-centerer;
+	@extend %text-centerer
 }
 
 
@@ -356,60 +298,42 @@ width: 187px;
 	a{
 		font-size:33px;
 		display:flex;
-		font-family: "Open Sans";
 		font-weight: 200;
 	}
+
 	button{
 		margin-right: 32px;
-		//border-radius:50%;
-		width: 43px; 
+		width: 43px;
 		height: 43px; 
-		border:0px;
+		border:0;
 		justify-content: center;
 		font-size:21px;
-		font-family: "Open Sans";
 		background-color:$side-color;
-
-		//display:flex;
-		//align-items:center;
-	//	@include text-centerer;
+	}
 
 }
 
-}
 .nav_text{
 	color:$side-color !important;
+	font-weight: 500;
 }
-.nav-link{
-	&:hover {
-		color:$main-color;
-		}
-	&:focus {
-		color:$main-color;
-	}
-}
-
-
-
 
 .progress-bar {
     background-color: $main-color;
 }
 
 .funded{
-margin-top:22px;
-
+	margin-top:22px;
 	display: flex;
 	justify-content: space-between;
 	p{
 		font-size: 13px;
-		font-family: "Open Sans";
 		font-weight: 600;
 		color:#8d8d8d;
 	}
 }
 
-//поменяй картинку
+
 .lunapark-bg{
 		background-image: url("../images/back-water.jpg");
 		background-size:110% 100%;
@@ -428,13 +352,11 @@ margin-top:22px;
 	img{
 		height: 36px;
 		width: 36px;
-		margin-rigth:10px;
+		margin-right:5px;
 	}
 	li{
 	font-size: 13px;
-	font-family: "Open Sans";
 	font-weight: 600;
-
 	}
 }
 
@@ -445,31 +367,41 @@ margin-top:22px;
 		margin-right: 123px;
 	}
 	display: flex;
-	align-items:center;
 	font-size: 31px;
-	font-family: Nunito;
-	display: flex;
-	align-items:start;
+	font-family: 'Nunito', sans-serif;
+
 	img{
 	height: 37px;
 	width: 37px;
-	margin-rigth:10px;
+	margin-right:5px;
+
 
 	}
 
-	}
+}
 
 .active{
-	background-color:$main-color !important;
+	color:$main-color !important;
+
+	button{
+		background-color: $main-color;
+		color:white !important;
+	}
 
 }
 
 
-
+.nav-link{
+	&:hover {
+		color:$main-color;
+	}
+	&:focus {
+		color:$main-color;
+	}
+}
 
 .markers-cards{
 	display: flex;
-	//border: 1px solid;
 }
 
 .color-markers{

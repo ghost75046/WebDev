@@ -1,15 +1,25 @@
+.main-banner, .stonks_with_text, .text_in_cloud, .Be_Part, .Copyright {
+  text-align: center; }
+
+.login, .main-banner button, .Buyers button {
+  background-color: #93C533;
+  border: 0; }
+
+.main-banner, .myslaider, .myFind button, .centered-text, .Buyers {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .main-color {
   color: #93C533; }
 
 body {
   width: 1300px;
   margin: 0 auto;
-  font-family: "Open Sans"; }
+  font-family: "Open Sans", sans-serif; }
 
 .login {
   border-radius: 30px;
-  background-color: #93C533;
-  border: 0px;
   width: 100px;
   height: 35px; }
 
@@ -18,21 +28,14 @@ body {
   height: 570px !important;
   background-size: 100% 100%;
   background-image: url("../images/venezia.jpg");
-  height: 470px;
-  text-align: center;
   vertical-align: middle;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column; }
   .main-banner button {
     margin-top: 60px;
     font-size: 19px;
     font-weight: 550;
     width: 253px;
-    height: 72px;
-    background-color: #93C533;
-    border: 0px; }
+    height: 72px; }
 
 #Banana {
   font-size: 35px; }
@@ -42,32 +45,23 @@ body {
 
 .Big_zagolovok {
   font-size: 39px;
-  font-family: "Open Sans";
   font-weight: 600; }
 
 .stonks_with_text {
-  text-align: center;
   margin-top: 100px;
   font-size: 19px;
   margin-bottom: 160px; }
   .stonks_with_text p {
     color: #515151;
-    font-size: 19px;
-    font-family: "Open Sans"; }
+    font-size: 19px; }
   .stonks_with_text h2 {
     margin-top: 52px;
     margin-bottom: 73px; }
-
-.active {
-  background-color: #93C533; }
 
 .nav-link {
   color: #5f5f5f; }
 
 .myslaider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 70px;
   margin-bottom: 112px; }
 
@@ -78,19 +72,12 @@ body {
 
 #properties_button {
   background-color: #2893bb;
-  border: 0px; }
+  border: 0; }
 
 .myFind button {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
   height: 51px;
-  width: 187px; }
-
-.centered-text {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+  width: 187px;
+  font-weight: 600; }
 
 .Properties {
   background-color: #e1f8ff;
@@ -105,17 +92,13 @@ body {
 
 .Buyers {
   background-color: #f5f9ea;
-  height: 305px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  height: 305px; }
   .Buyers img {
     width: 111px;
     height: 95px;
     margin-right: 73px; }
   .Buyers button {
-    background-color: #93C533;
-    border: 0px; }
+    font-weight: 600; }
 
 .two_faces {
   display: flex;
@@ -126,8 +109,7 @@ body {
   display: inline-block;
   background-image: url("../images/cloud_text.png");
   background-size: 100% 100%;
-  padding: 50px;
-  text-align: center; }
+  padding: 50px; }
 
 .brands {
   display: flex;
@@ -141,7 +123,6 @@ body {
 .Backham_h4 {
   color: #93C533;
   font-size: 21px;
-  font-family: "Open Sans";
   font-weight: 600; }
 
 .Backham_text {
@@ -198,21 +179,19 @@ body {
 
 .MyCards {
   width: 980px;
-  margin-top: 63px;
-  font-family: "Open Sans"; }
+  margin-top: 63px; }
   .MyCards i {
     color: #93C533; }
   .MyCards a {
     text-align: right; }
   .MyCards p {
     font-size: 13px;
-    font-family: "Open Sans";
     color: #515151; }
-  .MyCards .card {
-    background-color: #f9f9f9; }
+
+.card {
+  background-color: #f9f9f9; }
 
 .Be_Part {
-  text-align: center;
   margin-top: 90px; }
 
 .Copyright {
@@ -220,33 +199,26 @@ body {
   margin-top: 40px;
   padding-top: 30px;
   font-size: 13px;
-  color: #848484;
-  text-align: center; }
+  color: #848484; }
 
 .STC_tabs {
   border-bottom: 1px solid #e6e6e6; }
   .STC_tabs a {
     font-size: 33px;
     display: flex;
-    font-family: "Open Sans";
     font-weight: 200; }
   .STC_tabs button {
     margin-right: 32px;
     width: 43px;
     height: 43px;
-    border: 0px;
+    border: 0;
     justify-content: center;
     font-size: 21px;
-    font-family: "Open Sans";
     background-color: #5f5f5f; }
 
 .nav_text {
-  color: #5f5f5f !important; }
-
-.nav-link:hover {
-  color: #93C533; }
-.nav-link:focus {
-  color: #93C533; }
+  color: #5f5f5f !important;
+  font-weight: 500; }
 
 .progress-bar {
   background-color: #93C533; }
@@ -257,7 +229,6 @@ body {
   justify-content: space-between; }
   .funded p {
     font-size: 13px;
-    font-family: "Open Sans";
     font-weight: 600;
     color: #8d8d8d; }
 
@@ -275,29 +246,33 @@ body {
   .main-nav img {
     height: 36px;
     width: 36px;
-    margin-rigth: 10px; }
+    margin-right: 5px; }
   .main-nav li {
     font-size: 13px;
-    font-family: "Open Sans";
     font-weight: 600; }
 
 .navbar-brand {
   display: flex;
-  align-items: center;
   font-size: 31px;
-  font-family: Nunito;
-  display: flex;
-  align-items: start; }
+  font-family: 'Nunito', sans-serif; }
   .navbar-brand b {
     color: #6d6e70;
     margin-right: 123px; }
   .navbar-brand img {
     height: 37px;
     width: 37px;
-    margin-rigth: 10px; }
+    margin-right: 5px; }
 
 .active {
-  background-color: #93C533 !important; }
+  color: #93C533 !important; }
+  .active button {
+    background-color: #93C533;
+    color: white !important; }
+
+.nav-link:hover {
+  color: #93C533; }
+.nav-link:focus {
+  color: #93C533; }
 
 .markers-cards {
   display: flex; }
