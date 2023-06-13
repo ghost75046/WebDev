@@ -45,7 +45,7 @@ body{
 
 .main-banner{
 	width:$page-width;
-	height: 570px !important;
+	height: 570px;
 	background-size:100% 100%;
 	background-image: url("../images/venezia.jpg");
 	@extend %text-centerer;
@@ -310,13 +310,12 @@ font-weight: 600;
 		font-size:21px;
 		background-color:$side-color;
 	}
-
-}
-
-.nav_text{
-	color:$side-color !important;
+span{
 	font-weight: 500;
 }
+}
+
+
 
 .progress-bar {
     background-color: $main-color;
